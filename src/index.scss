@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+
+$BG-Colour: #222222;
+$Font-Colour: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "helvetica";
+  color: $Font-Colour;
+  background-color: $BG-Colour;
+}
+
+.navBar {
+  color: $Font-Colour;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+
+  a {
+    text-decoration: none;
+  }
+
+  h4 {
+    font-size: 36px;
+    color: $Font-Colour;
+    font-family: "Inter", sans-serif;
+  }
+  padding: 1rem;
+  img {
+    width: 1.5rem;
+  }
+}
+
+.socialMediaIcons {
+  display: flex;
+  gap: 1rem;
+  padding-right: 1rem;
+}
+
+.Hero {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  button {
+    color: $BG-Colour;
+    background-color: $Font-Colour;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    animation: 1s ease-out heroSlideUp;
+  }
+
+  h1 {
+    animation: 1s ease-out heroSlideUp;
+  }
+
+  h3 {
+    animation: 1s ease-out heroSlideUp;
+  }
+}
+
+.About-Whole {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  .About {
+    display: flex;
+    padding: 2rem;
+    gap: 4rem;
+    max-width: 1280px;
+    align-items: center;
+  }
+
+  .About-Me {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .About-Skills {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .About-Skills-Tech {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .About-Skills-Skills {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .techIcons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    img {
+      width: 3rem;
+    }
+
+    .skillsList {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .skill {
+        background-color: $Font-Colour;
+        color: $BG-Colour;
+        padding: 8px 12px;
+      }
+    }
+  }
+}
+
+@keyframes heroSlideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
