@@ -10,6 +10,7 @@ $Font-Colour: #ffffff;
   font-family: "helvetica";
   color: $Font-Colour;
   background-color: $BG-Colour;
+  overflow-x: hidden;
 }
 
 .navBar {
@@ -19,6 +20,7 @@ $Font-Colour: #ffffff;
   align-items: center;
   position: fixed;
   width: 100vw;
+  overflow: hidden;
 
   a {
     text-decoration: none;
@@ -74,6 +76,7 @@ $Font-Colour: #ffffff;
   width: 100vw;
   display: flex;
   justify-content: center;
+  margin-bottom: 10rem;
 
   .About {
     display: flex;
@@ -126,6 +129,43 @@ $Font-Colour: #ffffff;
         background-color: $Font-Colour;
         color: $BG-Colour;
         padding: 8px 12px;
+      }
+    }
+  }
+}
+
+.Portfolio-Whole {
+  display: flex;
+  justify-content: center;
+
+  .Portfolio {
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    text-align: left;
+    gap: 4rem;
+
+    img {
+      width: 2rem;
+      margin-right: 1rem;
+    }
+
+    .portfolioItem {
+      display: flex;
+
+      .portfolioImg {
+        width: 30%;
+      }
+
+      .portfolioDesc {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        a {
+          margin-right: 1rem;
+        }
       }
     }
   }

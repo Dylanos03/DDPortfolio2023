@@ -20,7 +20,7 @@ function Root() {
         <div className="socialMediaIcons">
           {socialIcons.map((value: socialMediaIcons) => {
             return (
-              <a href={value.link}>
+              <a key={value.name} href={value.link}>
                 <img
                   src={require("../content/socialMedia" + value.src)}
                   alt={value.name}

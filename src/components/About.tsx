@@ -38,6 +38,7 @@ function About() {
               {techIcons.map((Icon) => {
                 return (
                   <img
+                    key={Icon.name}
                     src={require("../content/techIcons" + Icon.src)}
                     alt={Icon.name}
                   />
@@ -49,7 +50,11 @@ function About() {
             <h3>My Skills.</h3>
             <div className="skillsList">
               {skills.map((Skills) => {
-                return <div className="skill">{Skills}</div>;
+                return (
+                  <div key={Skills} className="skill">
+                    {Skills}
+                  </div>
+                );
               })}
             </div>
           </div>
