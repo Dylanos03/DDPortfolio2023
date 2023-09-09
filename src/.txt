@@ -1,7 +1,0 @@
-https://docs.google.com/forms/d/e/1FAIpQLSe_x0unGRMSx4uWSDUDKm5P6hl3lTcr7QfxUXpgz3Uyd80XGw/formResponse
-
-entry.499876196=1234-Name-1234
-
-entry.457651346=1234-email-1234
-
-entry.1048177587=1234-message-1234

@@ -45,22 +45,22 @@ $Font-Colour: #ffffff;
 
 .Hero {
   height: 100vh;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 
-  button {
+  .viewButton {
     color: $BG-Colour;
     background-color: $Font-Colour;
-    border: none;
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     font-weight: 500;
     cursor: pointer;
     animation: 1s ease-out heroSlideUp;
+    overflow: hidden;
+    text-decoration: none;
   }
 
   h1 {
@@ -144,6 +144,7 @@ $Font-Colour: #ffffff;
     max-width: 1280px;
     text-align: left;
     gap: 4rem;
+    padding: 2rem;
 
     .button-more {
       background-color: $Font-Colour;
@@ -153,6 +154,7 @@ $Font-Colour: #ffffff;
       border-radius: 0.25rem;
       text-align: center;
       cursor: pointer;
+      font-weight: 500;
     }
   }
 }
@@ -201,6 +203,7 @@ $Font-Colour: #ffffff;
     flex-direction: column;
     width: 100%;
     max-width: 1280px;
+    padding: 2rem;
 
     input,
     textarea {
@@ -208,13 +211,31 @@ $Font-Colour: #ffffff;
       padding: 0.5rem 1rem;
       margin-top: 1rem;
       border: none;
+      font-size: 16px;
+      color: $BG-Colour;
     }
 
     button {
       border: solid 1px $Font-Colour;
       margin-top: 1rem;
       padding: 0.5rem 1rem;
+      font-weight: 500;
+      cursor: pointer;
     }
+  }
+}
+
+.projectsPage {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+
+  .projectsList {
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 
@@ -226,6 +247,51 @@ $Font-Colour: #ffffff;
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  .About {
+    flex-direction: column;
+
+    .About-Me {
+      width: 100%;
+    }
+
+    .About-Skills {
+      width: 100%;
+      flex-direction: row;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Hero {
+    align-items: baseline;
+    padding: 1rem;
+    h1 {
+      font-size: 48px;
+      animation: 1s ease-out heroSlideLeft;
+    }
+    h3 {
+      animation: 1s ease-out heroSlideLeft;
+    }
+  }
+
+  .About {
+    .About-Skills {
+      flex-direction: column;
+    }
+  }
+
+  .portfolioItem {
+    flex-direction: column;
+    .portfolioImg {
+      width: 100%;
+    }
+    .portfolioDesc {
+      width: 100%;
+    }
+  }
+}
+
 @keyframes heroSlideUp {
   0% {
     transform: translateY(100%);
@@ -233,6 +299,17 @@ $Font-Colour: #ffffff;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes heroSlideLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
     opacity: 1;
   }
 }

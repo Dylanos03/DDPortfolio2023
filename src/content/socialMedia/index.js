@@ -2,16 +2,16 @@ export const socialIcons = [
   {
     name: "GitHub",
     src: "/github.svg",
-    link: "",
+    link: "https://github.com/Dylanos03",
   },
   {
     name: "LinkedIn",
     src: "/linkedin.svg",
-    link: "",
+    link: "https://www.linkedin.com/in/dylan-j-osullivan/",
   },
   {
     name: "Instagram",
     src: "/instagram.svg",
-    link: "",
+    link: "https://www.instagram.com/dd.dylanos/",
   },
 ];

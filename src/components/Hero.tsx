@@ -7,9 +7,8 @@ function Hero() {
       <div className="Hero">
         <h3>Hi, I'm Dylan</h3>
         <h1>A Front-End Developer</h1>
-        <a href=""></a>
-        <Link to={""}>
-          <button>View my work</button>
+        <Link className="viewButton" to={"projects"}>
+          View my work
         </Link>
       </div>
     </>

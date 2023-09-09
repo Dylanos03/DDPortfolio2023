@@ -1,6 +1,7 @@
 import * as React from "react";
 import PortfolioItem from "./subComponents/portfolioItem";
 import { portfolioImgs } from "../content/projectImages";
+import { Link } from "react-router-dom";
 
 export const portfolioItemsList = [
   {
@@ -40,9 +41,10 @@ function Portfolio() {
               />
             );
           })}
-          <a href="/projects">
-            <div className="button-more">See all my work</div>
-          </a>
+
+          <Link to={"projects"} className="button-more">
+            See all my work
+          </Link>
         </section>
       </div>
     </>

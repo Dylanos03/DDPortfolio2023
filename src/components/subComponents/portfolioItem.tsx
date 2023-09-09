@@ -45,8 +45,16 @@ function PortfolioItem({
               ))}
           </div>
           <div>
-            {liveLink && <a href={liveLink}>View Live</a>}
-            {gitLink && <a href={gitLink}>GitHub</a>}
+            {liveLink && (
+              <a href={liveLink} target="_blank">
+                View Live
+              </a>
+            )}
+            {gitLink && (
+              <a href={gitLink} target="_blank">
+                GitHub
+              </a>
+            )}
           </div>
         </div>
       </div>
