@@ -145,30 +145,85 @@ $Font-Colour: #ffffff;
     text-align: left;
     gap: 4rem;
 
-    img {
-      width: 2rem;
-      margin-right: 1rem;
-    }
-
-    .portfolioItem {
-      display: flex;
-
-      .portfolioImg {
-        width: 30%;
-      }
-
-      .portfolioDesc {
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-
-        a {
-          margin-right: 1rem;
-        }
-      }
+    .button-more {
+      background-color: $Font-Colour;
+      color: $BG-Colour;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+      text-align: center;
+      cursor: pointer;
     }
   }
+}
+
+.portfolioItem {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  img {
+    width: 2rem;
+    margin-right: 1rem;
+  }
+
+  .portfolioImg {
+    width: 30%;
+
+    img {
+      aspect-ratio: 16/10;
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+  }
+
+  .portfolioDesc {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    a {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  flex-direction: column;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1280px;
+
+    input,
+    textarea {
+      background-color: $Font-Colour;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      border: none;
+    }
+
+    button {
+      border: solid 1px $Font-Colour;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
 }
 
 @keyframes heroSlideUp {

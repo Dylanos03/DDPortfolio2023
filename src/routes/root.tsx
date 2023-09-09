@@ -31,6 +31,9 @@ function Root() {
         </div>
       </nav>
       <Outlet />
+      <section className="footer">
+        <p>Made by Dylan O'Sullivan.</p>
+      </section>
     </>
   );
 }

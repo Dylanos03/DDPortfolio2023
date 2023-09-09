@@ -20,13 +20,15 @@ function PortfolioItem({
   image,
 }: portfolioProps) {
   const itemImage = portfolioImgs.find((img) => img.id === image);
-  console.log(itemImage);
 
   return (
     <>
       <div className="portfolioItem">
         <div className="portfolioImg">
-          <img src={itemImage.src} alt={title} />
+          <img
+            src={require("../../content/projectImages" + itemImage?.src)}
+            alt={title}
+          />
         </div>
         <div className="portfolioDesc">
           <h4>{title}</h4>
