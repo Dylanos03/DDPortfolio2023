@@ -6,7 +6,7 @@ function Contact() {
       <section className="Contact">
         <h3>Get in touch.</h3>
         <form
-          action="https://formsubmit.co/dylanos1301@gmail.com"
+          action="https://formsubmit.co/b6e71a1d897ebc057a308fffc0966572"
           method="POST"
         >
           <input type="text" name="name" placeholder="name" />
