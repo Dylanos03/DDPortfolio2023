@@ -54,4 +54,9 @@ export const techIcons = [
     name: "Bootstrap",
     src: "/bootstrap.svg",
   },
+  {
+    id: 12,
+    name: "NEXTJS",
+    src: "/nextjs.svg",
+  },
 ];
