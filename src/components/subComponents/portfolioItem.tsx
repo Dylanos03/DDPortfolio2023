@@ -1,4 +1,3 @@
-import * as React from "react";
 import { portfolioImgs } from "../../content/projectImages";
 import { techIcons } from "../../content/techIcons";
 

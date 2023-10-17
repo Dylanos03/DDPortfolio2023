@@ -1,4 +1,3 @@
-import * as React from "react";
 import { techIcons } from "../content/techIcons";
 
 const skills = [

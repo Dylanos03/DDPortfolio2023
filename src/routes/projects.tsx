@@ -1,4 +1,3 @@
-import * as React from "react";
 import { portfolioItemsList } from "../components/portfolio";
 import PortfolioItem from "../components/subComponents/portfolioItem";
 

@@ -9,4 +9,9 @@ export const portfolioImgs = [
     title: "Umbreco",
     src: "/Umbreco.webp",
   },
+  {
+    id: 3,
+    title: "Norex",
+    src: "/Norex.webp",
+  },
 ];
