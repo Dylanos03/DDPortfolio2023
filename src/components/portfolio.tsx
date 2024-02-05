@@ -3,6 +3,14 @@ import { Link } from "react-router-dom";
 
 export const portfolioItemsList = [
   {
+    title: "Homeys",
+    desc: "Homeys is a hub for students to find other students to live with based on their interests and hobbies. This is my 3rd year final project, built with the T3 stack, it has been my biggest project so far",
+    tech: [1, 2, 3, 5, 6, 7, 8, 12],
+    liveSite: "https://homeys-blush.vercel.app/",
+    githubLink: "https://github.com/Dylanos03/homeys",
+    imgID: 4,
+  },
+  {
     title: "Norex (Work in progress)",
     desc: "Norex is a cryptocurrency tracking web app built with NextJS and typescript, it makes use of the coingecko api which gives me live prices and changes on all cryptocoins. This site is under development as I am implementing a account feature for saving coins using prisma, planetscale and Auth.js and also fixing the styling. It is hosted on AWS Amplify and you can view it with the link below",
     tech: [1, 2, 3, 4, 6, 7, 8, 12],

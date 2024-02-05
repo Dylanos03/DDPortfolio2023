@@ -14,4 +14,9 @@ export const portfolioImgs = [
     title: "Norex",
     src: "/Norex.webp",
   },
+  {
+    id: 4,
+    title: "Homeys",
+    src: "/Homeys.webp",
+  },
 ];
