@@ -5,7 +5,7 @@ export const portfolioItemsList = [
   {
     title: "Homeys",
     desc: "Homeys is a hub for students to find other students to live with based on their interests and hobbies. This is my 3rd year final project, built with the T3 stack, it has been my biggest project so far",
-    tech: [1, 2, 3, 5, 6, 7, 8, 12],
+    tech: [1, 2, 3, 5, 6, 7, 8, 12, 4],
     liveSite: "https://homeys-blush.vercel.app/",
     githubLink: "https://github.com/Dylanos03/homeys",
     imgID: 4,
