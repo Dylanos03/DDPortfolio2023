@@ -59,4 +59,19 @@ export const techIcons = [
     name: "NEXTJS",
     src: "/nextjs.svg",
   },
+  {
+    id: 13,
+    name: "NodeJS",
+    src: "/node-js.svg",
+  },
+  {
+    id: 14,
+    name: "Prisma",
+    src: "/prisma.svg",
+  },
+  {
+    id: 15,
+    name: "Stripe",
+    src: "/stripe.svg",
+  },
 ];

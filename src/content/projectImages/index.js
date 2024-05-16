@@ -19,4 +19,9 @@ export const portfolioImgs = [
     title: "Homeys",
     src: "/Homeys.webp",
   },
+  {
+    id: 5,
+    title: "Page Writer Pro",
+    src: "/PageWriterPro.webp",
+  },
 ];
